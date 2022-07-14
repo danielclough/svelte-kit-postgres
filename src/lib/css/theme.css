@@ -1,0 +1,33 @@
+:root {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --primary-color: #333;
+    --secondary-color: #555;
+    --tertiary-color: #111;
+    --primary-contrast: #ccc;
+    --secondary-contrast: #c55;
+    --tertiary-contrast: #dc3
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--primary-color);
+    background: linear-gradient(
+        180deg,
+        var(--primary-color),
+        var(--secondary-color),
+        var(--tertiary-color)
+    );
+    padding: 1em;
+}
+footer {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    color: var(--tertiary-contrast);
+}
